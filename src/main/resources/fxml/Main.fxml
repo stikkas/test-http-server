@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="my.home.pro.test.MainController">
+   <center>
+      <SplitPane dividerPositions="0.5" prefHeight="402.0" prefWidth="540.0">
+         <items>
+            <ScrollPane prefHeight="400.0" prefWidth="887.0">
+               <content>
+                  <VBox fx:id="paneBox" prefHeight="200.0" prefWidth="265.0" />
+               </content>
+            </ScrollPane>
+            <TextArea fx:id="resultPane" editable="false" prefHeight="400.0" prefWidth="525.0" />
+         </items>
+      </SplitPane>
+   </center>
+   <bottom>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#launchButtonClicked" text="Launch" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <Button mnemonicParsing="false" onAction="#addButtonClicked" text="Add" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
